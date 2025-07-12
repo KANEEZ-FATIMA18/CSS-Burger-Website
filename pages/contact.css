@@ -1,3 +1,8 @@
+@font-face {
+    font-family: six caps;
+    src: url(/sixcaps-fontface/SixCaps-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,10 +31,12 @@ body {
   cursor: pointer;
 }
 h1 {
-  font-size: 90px;
-  font-weight: 800;
+  font-size: 150px;
   margin: 40px 0 10px;
   letter-spacing: 2px;
+  font-family: six caps;
+  font-weight: semi-bold;
+
 }
 
 p {
@@ -70,8 +77,9 @@ button[type="submit"] {
   border-radius: 6px;
   cursor: pointer;
   margin-top: 10px;
-  transition: background 0.3s;
+  transition: all 0.5s ease-in-out;
 }
+
 
 button[type="submit"]:hover {
   background-color: #fcebd5;

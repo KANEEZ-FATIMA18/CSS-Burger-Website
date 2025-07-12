@@ -1,780 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>THE BURGER LAB</title>
-    <link rel="stylesheet" href="responsive.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="responsive.css" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE BURGER LAB</title>
+  <link rel="stylesheet" href="responsive.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="wrapper-box" style=" border-radius: inherit; inset: 0px;">
-      <nav class="navbar navbar-expand-lg bg-transparent px-lg-5">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand head-logo text-white" href="index.html"
-            ><img src="https://framerusercontent.com/images/cofcomygsfAPVH6NMpwyAYXhYE.svg" alt=""></a
-          >
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-          <!-- Toggler / Hamburger -->
-          <button
-            class="navbar-toggler text-white"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
 
-          <!-- Offcanvas -->
-          <div
-            class="offcanvas offcanvas-end bg-dark text-white"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title head-logo" id="offcanvasNavbarLabel">
-                Brew Bliss Café
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul
-                class="navbar-nav justify-content-center align-items-center gap-4 flex-grow-1 pe-3 head-links"
-              >
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="/pages/about.html"
-                    >About Us</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="/pages/cafe.html">Cafe Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="/pages/image.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#location">Locations</a>
-                </li>
+<body>
+  <div class="wrapper-box" style=" border-radius: inherit; inset: 0px;">
+    <nav class="navbar navbar-expand-lg bg-transparent px-lg-5">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand head-logo text-white" href="index.html"><img
+            src="https://framerusercontent.com/images/cofcomygsfAPVH6NMpwyAYXhYE.svg" alt=""></a>
 
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="/pages/signup.html">Signup</a>
-                </li>
+        <!-- Toggler / Hamburger -->
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="/pages/login.html">Login</a>
-                </li>
-              </ul>
-              <div class="mt-3 nav-item text-center">
-                <button class="admin-btn">Admin Dashboard</button>
-              </div>
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title head-logo" id="offcanvasNavbarLabel">
+              Brew Bliss Café
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center align-items-center gap-4 flex-grow-1 pe-3 head-links">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/pages/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/pages/cafe.html">Cafe Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/pages/image.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#location">Locations</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/pages/signup.html">Signup</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/pages/login.html">Login</a>
+              </li>
+            </ul>
+            <div class="mt-3 nav-item text-center">
+              <button class="admin-btn">Admin Dashboard</button>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <!-- __________________HERO SECTION ______________________ -->
-      <section class="hero-main">
-        <div class="hero-1">
-          <h1 class="tracking-in-expand">The Burger lab</h1>
-          <button class="hero-btn fade-in-up" style="animation-delay: 0.6s">
-            Explore Our Burger's
-          </button>
-        </div>
-      </section>
+    <!-- __________________HERO SECTION ______________________ -->
+    <section class="hero-main">
+      <div class="hero-1">
+        <h1 class="tracking-in-expand-fwd-bottom scale-down-bottom-alternate ">The Burger lab</h1>
+        <button class="hero-btn fade-in-up vibrate-1" style="animation-delay: 0.6s">
+          Explore Our Burger's
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!--_______________ BORN TO BE TASTY ____________________ -->
+
+  <section class="image-section">
+    <h2 class="slider-heading " data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">BORN TO BE TASTY </h2>
+    <div class="image-slider">
+      <div class="slider-track" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/sU5Zo8BhGADYSOPH52ZO6O34ow.webp?scale-down-to=2048" /></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/RdWzUKT7LDCNzU6skmvn7z4FZc4.webp?scale-down-to=1024" /></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/dILC88HtgXnWgaFirLKZM2iDnLI.webp?scale-down-to=1024" /></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/OIfqBnYLmchdw0Eq2ZhViMuETMA.webp?scale-down-to=1024" /></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/GzVURWCzBJYbsX2WVVCR5RMMR4.webp?scale-down-to=1024"></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/aB7XwJjGmqVhrNUTcZeSxXaeqg.webp?scale-down-to=512" alt=""></div>
+
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/sU5Zo8BhGADYSOPH52ZO6O34ow.webp?scale-down-to=2048" /></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/RdWzUKT7LDCNzU6skmvn7z4FZc4.webp?scale-down-to=1024" /></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/dILC88HtgXnWgaFirLKZM2iDnLI.webp?scale-down-to=1024" /></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/OIfqBnYLmchdw0Eq2ZhViMuETMA.webp?scale-down-to=1024" /></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/GzVURWCzBJYbsX2WVVCR5RMMR4.webp?scale-down-to=1024"></div>
+        <div class="slide"><img
+            src="https://framerusercontent.com/images/aB7XwJjGmqVhrNUTcZeSxXaeqg.webp?scale-down-to=512" alt=""></div>
+
+      </div>
     </div>
+    <div class="slide-bottom">
+      <p>We started with a food truck and a dream: to bring real, unapologetic flavor to burger lovers. No shortcuts, no
+        compromises—just good food, great vibes, and even better company.</p>
+      <button>read our story</button>
+    </div>
+  </section>
 
-   <!--_______________ BORN TO BE TASTY ____________________ -->
 
-   <section class="image-section">
-  <h2 class="slider-heading">BORN TO BE TASTY </h2>
+  <!-- arrow  -->
+  <a href="#menu">
+    <div class="arrow">
+      <i class="fa-solid fa-arrow-down"></i>
+    </div>
+  </a>
+
+  <!-- slider marquee  -->
+  <marquee behavior="scroll" direction="left" scrollamount="4"
+    style="font-size: 1.2rem; color: #faebd7; font-family: sans-serif; background-color: #0D0D0D; text-transform: uppercase; height: 60px;align-items: center; display: flex;">
+    chef selection / our burgers / chef selection / our burgers / chef selection / our burgers / chef selection / our
+    burgers / chef selection / our burgers / chef selection / our burgers / chef selection / our burgers / chef
+    selection / our burgers / chef selection / our burgers /
+  </marquee>
+
+
+  <!-- _______________OUR SIGNATURE BITES _______________ -->
+    <section class="table-main bites-main">
+    <div class="table-content">
+      <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">our signature bites</h2>
+      <p>Every burger starts with handpicked, premium- <br>quality meats, perfectly seasoned and grilled to <br> juicy perfection. We don't just settle for the <br> ordinary; our buns are freshly baked, our <br> toppings are always crisp, and every sauce is <br> crafted in-house for that perfect, bold flavor.</p>
+    </div>
+    <!-- bites card 1 -->
+     <div class="bites-card tilt-in-top-1" >
+      <div class="bites-left">
+        <span class="bites-price">12$</span>
+        <h3>The Classic street boss</h3>
+        <p>A tribute to the original — juicy beef patty, <br> melted cheddar, crispy lettuce, ripe tomatoes, <br> and a hint of our secret sauce, all stacked on a <br> toasted brioche bun.</p>
+        <button>BOOK NOW</button>
+      </div>
+      <div class="bites-right">
+        <img src="https://framerusercontent.com/images/8yU1Dy4QGqhwpevesSulAngcCMA.png" alt="">
+      </div>
+     </div>
+
+      <!-- bites card 2 -->
+     <div class="bites-card bites-light">
+      <div class="bites-left">
+        <span class="bites-price">15$</span>
+        <h3>The Smoky BBQ Royale</h3>
+        <p>Bold and smoky! Double patties glazed with BBQ sauce, topped with crispy onion rings, melted pepper jack cheese, and a kick of jalapeños, all wrapped in a soft sesame bun.</p>
+        <button>BOOK NOW</button>
+      </div>
+      <div class="bites-right">
+        <img src="https://framerusercontent.com/images/OHBqmGoTZBYnM5IeBZT5kPPpl6k.png?scale-down-to=512" alt="">
+      </div>
+     </div>
+
+      <!-- bites card 3-->
+     <div class="bites-card">
+      <div class="bites-left">
+        <span class="bites-price">16$</span>
+        <h3>The Truffle Shuffle</h3>
+        <p>Indulge in luxury with a truffle aioli, caramelized onions, sautéed mushrooms, Swiss cheese, and arugula, sitting atop a premium Angus beef patty.</p>
+        <button>BOOK NOW</button>
+      </div>
+      <div class="bites-right">
+        <img src="https://framerusercontent.com/images/wPIdRCUwBMq8dwU6aAvLvL3mU.png" alt="">
+      </div>
+     </div>
+
+      <!-- bites card 4 -->
+     <div class="bites-card bites-light">
+      <div class="bites-left">
+        <span class="bites-price">12$</span>
+        <h3>The Spicy Heatwav</h3>
+        <p>For the brave! Our fiery burger with a sriracha mayo spread, spicy pepper jack, fresh jalapeños, and a zesty habanero relish to turn up the heat.</p>
+        <button>BOOK NOW</button>
+      </div>
+      <div class="bites-right">
+        <img src="https://framerusercontent.com/images/o3sLeGrgv0uPPMlbBApKV2mK4xE.png" alt="">
+      </div>
+     </div>
+  </section>
+
+
+  <!--_______________ BOOK YOUR TABLE___________________ -->
+  <section class="table-main">
+    <div class="table-content">
+      <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">BOOK YOUR TABLE</h2>
+      <p>Reserve your table now and let us save you a <br> spot. Whether it’s a casual hangout or a special <br>
+        celebration, we’ve got the perfect table waiting <br> for you.</p>
+      <button>MAKE THE RESERVATION</button>
+    </div>
+  </section>
   <div class="image-slider">
-    <div class="slider-track">
-       <div class="slide"><img src="https://framerusercontent.com/images/sU5Zo8BhGADYSOPH52ZO6O34ow.webp?scale-down-to=2048" /></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/RdWzUKT7LDCNzU6skmvn7z4FZc4.webp?scale-down-to=1024" /></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/dILC88HtgXnWgaFirLKZM2iDnLI.webp?scale-down-to=1024" /></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/OIfqBnYLmchdw0Eq2ZhViMuETMA.webp?scale-down-to=1024" /></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/GzVURWCzBJYbsX2WVVCR5RMMR4.webp?scale-down-to=1024"></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/aB7XwJjGmqVhrNUTcZeSxXaeqg.webp?scale-down-to=512" alt=""></div>
-    
-    <div class="slide"><img src="https://framerusercontent.com/images/sU5Zo8BhGADYSOPH52ZO6O34ow.webp?scale-down-to=2048" /></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/RdWzUKT7LDCNzU6skmvn7z4FZc4.webp?scale-down-to=1024" /></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/dILC88HtgXnWgaFirLKZM2iDnLI.webp?scale-down-to=1024" /></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/OIfqBnYLmchdw0Eq2ZhViMuETMA.webp?scale-down-to=1024" /></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/GzVURWCzBJYbsX2WVVCR5RMMR4.webp?scale-down-to=1024" ></div>
-    <div class="slide"><img src="https://framerusercontent.com/images/aB7XwJjGmqVhrNUTcZeSxXaeqg.webp?scale-down-to=512" alt=""></div>
-    
+    <div class="slider-track" style="background-color: #faebd7; border: 9px solid #faebd7;">
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/sU5Zo8BhGADYSOPH52ZO6O34ow.webp?scale-down-to=2048" /></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/RdWzUKT7LDCNzU6skmvn7z4FZc4.webp?scale-down-to=1024" /></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/dILC88HtgXnWgaFirLKZM2iDnLI.webp?scale-down-to=1024" /></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/OIfqBnYLmchdw0Eq2ZhViMuETMA.webp?scale-down-to=1024" /></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/GzVURWCzBJYbsX2WVVCR5RMMR4.webp?scale-down-to=1024"></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/aB7XwJjGmqVhrNUTcZeSxXaeqg.webp?scale-down-to=512" alt=""></div>
+
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/sU5Zo8BhGADYSOPH52ZO6O34ow.webp?scale-down-to=2048" /></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/RdWzUKT7LDCNzU6skmvn7z4FZc4.webp?scale-down-to=1024" /></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/dILC88HtgXnWgaFirLKZM2iDnLI.webp?scale-down-to=1024" /></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/OIfqBnYLmchdw0Eq2ZhViMuETMA.webp?scale-down-to=1024" /></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/GzVURWCzBJYbsX2WVVCR5RMMR4.webp?scale-down-to=1024"></div>
+      <div class="slide"><img
+          src="https://framerusercontent.com/images/aB7XwJjGmqVhrNUTcZeSxXaeqg.webp?scale-down-to=512" alt=""></div>
+
     </div>
   </div>
- <div class="slide-bottom">
-     <p>We started with a food truck and a dream: to bring real, unapologetic flavor to burger lovers. No shortcuts, no compromises—just good food, great vibes, and even better company.</p>
-  <button>read our story</button>
- </div>
-</section>
 
 
-    <!-- arrow  -->
-    <a href="#menu">
-      <div class="arrow">
-        <i class="fa-solid fa-arrow-down"></i>
-      </div>
-    </a>
 
-    <!-- slider marquee  -->
-     <marquee behavior="scroll" direction="left" scrollamount="4" style="font-size: 1.3rem; color: #faebd7; font-family: sans-serif; background-color: #0D0D0D; text-transform: uppercase;">
-  chef selection / our burgers / chef selection / our burgers / chef selection / our burgers / chef selection / our burgers / chef selection / our burgers / chef selection / our burgers / chef selection / our burgers / chef selection / our burgers / chef selection / our burgers /
-</marquee>
 
-    <!-- __________________UP TO 50% OFF SECTION ______________________ -->
-    <section class="off-main">
-      <div
-        class="off-child"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-delay="100"
-      >
-        <!-- Left Text Side -->
-        <div class="off-left">
-          <h2>Up to 50% Off</h2>
-          <p>
-            Enjoy your favorite brews at unbeatable prices!
-            <br />
-            For a limited time, sip in the savings with up to 50% off on our
-            most-loved coffees.
-            <br />
-            Hurry, these flavors won’t wait forever!
-          </p>
-          <button>Order Now</button>
-        </div>
 
-        <!-- Right Image Side -->
-        <div class="off-right">
-          <img
-            src="https://i.pinimg.com/736x/91/bc/99/91bc99819b0bbe2d1e33f92b7220fec5.jpg"
-            alt="Coffee Offer"
-          />
-        </div>
-      </div>
-    </section>
 
-    <!-- __________________POPULAR MENUSECTION_________________ -->
-    <section id="menu" class="py-5" style="border: 4px solid #e6d3b3">
-      <div
-        class="container"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-delay="100"
-      >
-        <h2
-          class="text-center fw-bold mb-3"
-          style="color: #e6d3b3; font-family: dancing script; font-size: 2.5rem"
-        >
-          Popular Menu
-        </h2>
-        <p class="text-center mb-6" style="color: antiquewhite">
-          Our most-loved brews, freshly brewed for you!
-        </p>
 
-        <div
-          id="popularMenuCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row">
-                <!-- Card 1 -->
-                <div
-                  class="col-12 col-md-6 col-lg-4"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="100"
-                >
-                  <div class="card cards">
-                    <img
-                      src="https://i.pinimg.com/736x/02/fa/26/02fa261c5189810a44f6e7579e9e6edf.jpg"
-                      class="card-img-top menu-img img-fluid"
-                      alt="Hazelnut Latte"
-                    />
-                    <div class="card-body text-center">
-                      <h5 class="card-title menu-heading">
-                        Golden Hazelnut Bliss
-                      </h5>
-                      <button class="menu-button">Order Now</button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 2 -->
-                <div
-                  class="col-12 col-md-6 col-lg-4 d-none d-md-block"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="100"
-                >
-                  <div class="card">
-                    <img
-                      src="https://i.pinimg.com/736x/1f/a3/48/1fa3488826d460cc4377db02ad7d7d2c.jpg"
-                      class="card-img-top menu-img img-fluid"
-                      alt="Vanilla Cold Brew"
-                    />
-                    <div class="card-body text-center">
-                      <h5 class="card-title menu-heading">Vanilla Cold Brew</h5>
-                      <button class="menu-button">Order Now</button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 3 -->
-                <div
-                  class="col-12 col-md-6 col-lg-4 d-none d-lg-block"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="100"
-                >
-                  <div class="card">
-                    <img
-                      src="https://i.pinimg.com/736x/b7/54/08/b7540855b7b1db2d987b3dea9a9f2f67.jpg"
-                      class="card-img-top menu-img img-fluid"
-                      alt="Caramel Macchiato"
-                    />
-                    <div class="card-body text-center">
-                      <h5 class="card-title menu-heading">Caramel Macchiato</h5>
-                      <button class="menu-button">Order Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="row">
-                <!-- Card 4 -->
-                <div
-                  class="col-12 col-md-6 col-lg-4"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="100"
-                >
-                  <div class="card">
-                    <img
-                      src="https://i.pinimg.com/736x/e9/77/04/e977044b842a20b65a4de278cf70bdc9.jpg"
-                      class="card-img-top menu-img img-fluid"
-                      alt="Mocha Brew"
-                    />
-                    <div class="card-body text-center">
-                      <h5 class="card-title menu-heading">Mocha Moondust</h5>
-                      <button class="menu-button">Order Now</button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 5 -->
-                <div
-                  class="col-12 col-md-6 col-lg-4 d-none d-md-block"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="100"
-                >
-                  <div class="card">
-                    <img
-                      src="https://i.pinimg.com/736x/c9/a3/f2/c9a3f2aebfa384a09f86274471f5c2ea.jpg"
-                      class="card-img-top menu-img img-fluid"
-                      alt="Classic Espresso"
-                    />
-                    <div class="card-body text-center">
-                      <h5 class="card-title menu-heading">Midnight Espresso</h5>
-                      <button class="menu-button">Order Now</button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 6 -->
-                <div
-                  class="col-12 col-md-6 col-lg-4 d-none d-lg-block"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="100"
-                >
-                  <div class="card">
-                    <img
-                      src="https://i.pinimg.com/736x/34/07/00/340700d1d3cc53f0299c0ad3f5a9dff2.jpg"
-                      class="card-img-top menu-img img-fluid"
-                      alt="Pumpkin Spice Latte"
-                    />
-                    <div class="card-body text-center">
-                      <h5 class="card-title menu-heading">Pumpkin Latte</h5>
-                      <button class="menu-button">Order Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Carousel Controls -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#popularMenuCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#popularMenuCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- __________________our location _________________ -->
-    <section class="py-5" style="background-color: #e6d3b3" id="location">
-      <div class="container">
-        <h2
-          class="text-center fw-bold text-dark mb-4"
-          style="color: #e6d3b3; font-family: dancing script; font-size: 2.5rem"
-        >
-          Our Locations
-        </h2>
-        <div class="row text-center">
-          <!-- Location Card 1 -->
-          <div
-            class="col-12 col-md-4 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-          >
-            <img
-              src="https://i.pinimg.com/736x/50/7b/b4/507bb4352c6cb87ae99ecc83698c80c2.jpg"
-              class="img-fluid rounded shadow slide-bck-center"
-              alt="Gulshan Branch"
-            />
-            <p
-              class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2"
-            >
-              <i class="bi bi-geo-alt-fill text-danger"></i
-              ><span
-                style="color: #4b2e2b; font-family: poppins; font-size: 0.9em"
-                >Brooklyn Heights – New York, USA</span
-              >
-            </p>
-          </div>
-
-          <!-- Location Card 2 -->
-          <div
-            class="col-12 col-md-4 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-          >
-            <img
-              src="https://i.pinimg.com/736x/e8/40/4d/e8404d48e49145f22fab7281b0babe66.jpg"
-              class="img-fluid rounded shadow slide-bck-center"
-              alt="DHA Phase 6"
-            />
-            <p
-              class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2"
-            >
-              <i class="bi bi-geo-alt-fill text-danger"></i>
-              <span
-                style="color: #4b2e2b; font-family: poppins; font-size: 0.9em"
-                >Notting Hill – London, UK</span
-              >
-            </p>
-          </div>
-
-          <!-- Location Card 3 -->
-          <div
-            class="col-12 col-md-4 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-          >
-            <img
-              src="https://i.pinimg.com/736x/64/e7/4e/64e74e189bd89e05b4d14b670ccec423.jpg"
-              class="img-fluid rounded shadow"
-              alt="North Nazimabad"
-            />
-            <p
-              class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2"
-            >
-              <i class="bi bi-geo-alt-fill text-danger"></i>
-              <span
-                style="color: #4b2e2b; font-family: poppins; font-size: 0.9em"
-                >Shibuya Crossing – Tokyo, Japan</span
-              >
-            </p>
-          </div>
-
-          <!-- Location Card 4 -->
-          <div
-            class="col-12 col-md-4 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-          >
-            <img
-              src="https://i.pinimg.com/736x/1f/9a/4e/1f9a4e947c0ab4c9426ca30c98162610.jpg"
-              class="img-fluid rounded shadow"
-              alt="North Nazimabad"
-            />
-            <p
-              class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2"
-            >
-              <i class="bi bi-geo-alt-fill text-danger"></i>
-              <span
-                style="color: #4b2e2b; font-family: poppins; font-size: 0.9em"
-                >Le Marais – Paris, France</span
-              >
-            </p>
-          </div>
-
-          <!-- Location Card 5-->
-          <div
-            class="col-12 col-md-4 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-          >
-            <img
-              src="https://i.pinimg.com/736x/3f/70/12/3f70125657e43b2564eb06340d2d263d.jpg"
-              class="img-fluid rounded shadow"
-              alt="North Nazimabad"
-            />
-            <p
-              class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2"
-            >
-              <i class="bi bi-geo-alt-fill text-danger"></i>
-              <span
-                style="color: #4b2e2b; font-family: poppins; font-size: 0.9em"
-              >
-                Jumeirah Lakes Towers – Dubai, UAE</span
-              >
-            </p>
-          </div>
-          <!-- Location Card 6-->
-          <div
-            class="col-12 col-md-4 col-lg-3 mb-4"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="100"
-          >
-            <img
-              src="https://i.pinimg.com/736x/7e/bc/b3/7ebcb30d25491a58977a3d566e8c44d0.jpg"
-              class="img-fluid rounded shadow"
-              alt="North Nazimabad"
-            />
-            <p
-              class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2"
-            >
-              <i class="bi bi-geo-alt-fill text-danger"></i>
-              <span
-                style="color: #4b2e2b; font-family: poppins; font-size: 0.9em"
-              >
-                Clifton – Karachi, Pakistan</span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--_______________ FAQ'S _________________________ -->
-    <section
-      class="faqs accordion py-5 container-fluid"
-      style="background-color: #4b2e2b"
-    >
-      <div
-        class="container py-5 rounded-3"
-        id="accordionFAQ"
-        style="background-color: #e6d3b3; box-shadow: 5px 5px 10px #201e1a"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        data-aos-delay="100"
-      >
-        <h2
-          class="text-center mb-4"
-          style="color: #4b2e2b; font-family: dancing script; font-size: 2.5em"
-        >
-          FAQ's
-        </h2>
-
-        <div
-          class="accordion-item"
-          style="background-color: #e6d3b3; border: 2px solid #4b2e2b"
-        >
-          <h2 class="accordion-header" id="faq1">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFaq1"
-              aria-expanded="true"
-              aria-controls="collapseFaq1"
-            >
-              Do you offer delivery services?
-            </button>
-          </h2>
-          <div
-            id="collapseFaq1"
-            class="accordion-collapse collapse show"
-            aria-labelledby="faq1"
-            data-bs-parent="#accordionFAQ"
-          >
-            <div
-              class="accordion-body"
-              style="color: #4b2e2b; font-size: 1.1em"
-            >
-              Yes! We offer free delivery within 5km radius. You can order
-              directly from our website or via our mobile app.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item" style="border: 2px solid #4b2e2b">
-          <h2 class="accordion-header" id="faq2">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFaq2"
-              aria-expanded="false"
-              aria-controls="collapseFaq2"
-            >
-              Are your coffee beans organic?
-            </button>
-          </h2>
-          <div
-            id="collapseFaq2"
-            class="accordion-collapse collapse"
-            aria-labelledby="faq2"
-            data-bs-parent="#accordionFAQ"
-          >
-            <div
-              class="accordion-body"
-              style="color: #4b2e2b; font-size: 1.1em"
-            >
-              Absolutely! We use 100% organic and ethically sourced coffee beans
-              from certified farms.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item" style="border: 2px solid #4b2e2b">
-          <h2 class="accordion-header" id="faq3">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFaq3"
-              aria-expanded="false"
-              aria-controls="collapseFaq3"
-            >
-              What are your opening hours?
-            </button>
-          </h2>
-          <div
-            id="collapseFaq3"
-            class="accordion-collapse collapse"
-            aria-labelledby="faq3"
-            data-bs-parent="#accordionFAQ"
-          >
-            <div
-              class="accordion-body"
-              style="color: #4b2e2b; font-size: 1.1em"
-            >
-              We are open daily from 8:00 AM to 11:00 PM, including weekends and
-              holidays.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- _________________USER REVIEWS_______________________
-    <section class="reviews-main" >
-      <h2>What Our Customers Say</h2>
-      <div class="reviews-child">
-        <div class="reviews"  data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-          <h3>Zoya Khan</h3>
-          <p>
-            “Absolutely loved the ambiance and caramel macchiato! Highly
-            recommend.”
-          </p>
-          <h5>Karachi, Pakistan</h5>
-          <span>★★★★★</span>
-        </div>
-        <div class="reviews"  data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-          <h3>Ahmed Raza</h3>
-          <p>
-            “Hazelnut latte was smooth and delicious. My new favorite coffee
-            place!”
-          </p>
-          <h5>Lahore, Pakistan</h5>
-          <span>★★★★★</span>
-        </div>
-        <div class="reviews" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-          <h3>Minahil Ali</h3>
-          <p>
-            “The vanilla cold brew was so refreshing! Friendly staff and cozy
-            vibes.”
-          </p>
-          <h5>Islamabad, Pakistan</h5>
-          <span>★★★★★</span>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- _________________USER REVIEWS_______________________ -->
-    <section class="reviews-main container-fluid">
-      <h2>What Our Customers Say</h2>
-
-      <div class="container">
-        <div class="row justify-content-center reviews-child">
-          <div class="col-md-6 col-sm-6 col-lg-4 mb-4">
-            <div
-              class="reviews"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="100"
-            >
-              <h3>Zoya Khan</h3>
-              <p>
-                “Absolutely loved the ambiance and caramel macchiato! Highly
-                recommend.”
-              </p>
-              <h5>Karachi, Pakistan</h5>
-              <span>★★★★★</span>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-lg-4 mb-4">
-            <div
-              class="reviews"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="200"
-            >
-              <h3>Ahmed Raza</h3>
-              <p>
-                “Hazelnut latte was smooth and delicious. My new favorite coffee
-                place!”
-              </p>
-              <h5>Lahore, Pakistan</h5>
-              <span>★★★★★</span>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 col-lg-4 mb-4">
-            <div
-              class="reviews"
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              data-aos-delay="300"
-            >
-              <h3>Minahil Ali</h3>
-              <p>
-                “The vanilla cold brew was so refreshing! Friendly staff and
-                cozy vibes.”
-              </p>
-              <h5>Islamabad, Pakistan</h5>
-              <span>★★★★★</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- __________________FOOTER SECTION ______________________ -->
-    <footer class="footer">
-      <div class="footer-child" data-aos="fade-up" data-aos-duration="2000">
-        <!-- Column 1: -->
-        <div class="f-1">
-          <h2>Brew Bliss Café</h2>
-          <p>
-            Your cozy corner for freshly brewed coffee, sweet treats,<br />
-            and relaxing vibes since 2025.
-          </p>
-          <p>
-            <i class="fa-solid fa-location-dot"></i>102/B New Market Sandigo-US>
-          </p>
-          <p><i class="fa-solid fa-phone"></i>+123 (4567) 890</p>
-          <p><i class="fa-solid fa-envelope-open"></i> contact@brewbliss.pk</p>
-        </div>
-
-        <!-- Column 2:-->
-        <div class="f-2">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="menu.html">Cafe Menu</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#location">Location</a></li>
-          </ul>
-        </div>
-        <!-- Column 3: -->
-        <div class="f-3">
-          <h3>Newsletter</h3>
-          <p>Subscribe Our Newsletter</p>
-          <input
-            type="email"
-            name="email"
-            id="f-email"
-            placeholder="Enter Your E-Mail*"
-          />
+  <!-- __________________UP TO 50% OFF SECTION ______________________ 
+  <section class="off-main">
+    <div class="off-child" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      
+      <div class="off-left">
+        <h2>Up to 50% Off</h2>
+        <p>
+          Enjoy your favorite brews at unbeatable prices!
           <br />
-          <button id="f-green-btn">
-            SUBSCRIBE<i class="fa-solid fa-arrow-right"></i>
+          For a limited time, sip in the savings with up to 50% off on our
+          most-loved coffees.
+          <br />
+          Hurry, these flavors won’t wait forever!
+        </p>
+        <button>Order Now</button>
+      </div>
+      <div class="off-right">
+        <img src="https://i.pinimg.com/736x/91/bc/99/91bc99819b0bbe2d1e33f92b7220fec5.jpg" alt="Coffee Offer" />
+      </div>
+    </div>
+  </section> -->
+
+  <!-- __________________POPULAR MENUSECTION_________________ -->
+  <section id="menu" class="py-5" style="border: 6px solid #faebd7">
+    <div class="container" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      <h2 class="text-center fw-bold mb-3" style="color: #faebd7; font-family: six caps; font-size: 4.5rem; letter-spacing: 8px;">
+        Popular Menu
+      </h2>
+      <p class="text-center mb-6" style="color: #faebd7">
+        Our most-loved brews, freshly brewed for you!
+      </p>
+
+      <div id="popularMenuCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- Card 1 -->
+              <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                <div class="card cards">
+                  <img src="https://i.pinimg.com/736x/4a/22/2c/4a222cf25e623c95d69eb2f318aa2dea.jpg"
+                    class="card-img-top menu-img img-fluid" alt="Hazelnut Latte" />
+                  <div class="card-body text-center">
+                    <h5 class="card-title menu-heading">
+                      Breakfast Stack
+                    </h5>
+                    <button class="menu-button">Order Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-12 col-md-6 col-lg-4 d-none d-md-block" data-aos="fade-up" data-aos-duration="2000"
+                data-aos-delay="100">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/52/7b/91/527b91e2dd095c9d29ba7d4ec98a2928.jpg"
+                    class="card-img-top menu-img img-fluid" alt="Vanilla Cold Brew" />
+                  <div class="card-body text-center">
+                    <h5 class="card-title menu-heading">The Classic Zingerburger</h5>
+                    <button class="menu-button">Order Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block" data-aos="fade-up" data-aos-duration="2000"
+                data-aos-delay="100">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/38/2e/27/382e27c77b9ae4c00435ad104ec5c418.jpg"
+                    class="card-img-top menu-img img-fluid" alt="Caramel Macchiato" />
+                  <div class="card-body text-center">
+                    <h5 class="card-title menu-heading">The Cheesy Beast</h5>
+                    <button class="menu-button">Order Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Card 4 -->
+              <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/00/5f/ec/005fec31249868858ec039dbb3dbd63b.jpg"
+                    class="card-img-top menu-img img-fluid" alt="Mocha Brew" />
+                  <div class="card-body text-center">
+                    <h5 class="card-title menu-heading">All-In-One Bite </h5>
+                    <button class="menu-button">Order Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="col-12 col-md-6 col-lg-4 d-none d-md-block" data-aos="fade-up" data-aos-duration="2000"
+                data-aos-delay="100">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/97/14/5a/97145a1c02875a4068d52ee49e0446ac.jpg"
+                    class="card-img-top menu-img img-fluid" alt="Classic Espresso" />
+                  <div class="card-body text-center">
+                    <h5 class="card-title menu-heading">Double Trouble</h5>
+                    <button class="menu-button">Order Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block" data-aos="fade-up" data-aos-duration="2000"
+                data-aos-delay="100">
+                <div class="card">
+                  <img src="https://i.pinimg.com/736x/57/1f/ff/571fff618531d22fa694c1e419b309f6.jpg" alt="Pumpkin Spice Latte" />
+                  <div class="card-body text-center">
+                    <h5 class="card-title menu-heading">Grill Master</h5>
+                    <button class="menu-button">Order Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#popularMenuCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#popularMenuCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- __________________our location _________________ -->
+  <section class="py-5" style="background-color: #faebd7" id="location">
+    <div class="container">
+      <h2 class="text-center fw-bold text-dark mb-4"
+        style="color: #e6d3b3; font-family: six caps; font-size: 4.5rem; letter-spacing: 7px;">
+        Our Locations
+      </h2>
+      <div class="row text-center">
+        <!-- Location Card 1 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img src="https://i.pinimg.com/736x/50/7b/b4/507bb4352c6cb87ae99ecc83698c80c2.jpg"
+            class="img-fluid rounded shadow slide-bck-center" alt="Gulshan Branch" />
+          <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
+            <i class="bi bi-geo-alt-fill text-danger"></i><span
+              style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Brooklyn Heights – New York, USA</span>
+          </p>
+        </div>
+
+        <!-- Location Card 2 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img src="https://i.pinimg.com/736x/e8/40/4d/e8404d48e49145f22fab7281b0babe66.jpg"
+            class="img-fluid rounded shadow slide-bck-center" alt="DHA Phase 6" />
+          <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
+            <i class="bi bi-geo-alt-fill text-danger"></i>
+            <span   style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Notting Hill – London, UK</span>
+          </p>
+        </div>
+
+        <!-- Location Card 3 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img src="https://i.pinimg.com/736x/64/e7/4e/64e74e189bd89e05b4d14b670ccec423.jpg"
+            class="img-fluid rounded shadow" alt="North Nazimabad" />
+          <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
+            <i class="bi bi-geo-alt-fill text-danger"></i>
+            <span   style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Shibuya Crossing – Tokyo, Japan</span>
+          </p>
+        </div>
+
+        <!-- Location Card 4 -->
+        <div class="col-12 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img src="https://i.pinimg.com/736x/1f/9a/4e/1f9a4e947c0ab4c9426ca30c98162610.jpg"
+            class="img-fluid rounded shadow" alt="North Nazimabad" />
+          <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
+            <i class="bi bi-geo-alt-fill text-danger"></i>
+            <span   style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Le Marais – Paris, France</span>
+          </p>
+        </div>
+
+        <!-- Location Card 5-->
+        <div class="col-12 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img src="https://i.pinimg.com/736x/3f/70/12/3f70125657e43b2564eb06340d2d263d.jpg"
+            class="img-fluid rounded shadow" alt="North Nazimabad" />
+          <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
+            <i class="bi bi-geo-alt-fill text-danger"></i>
+            <span style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">
+              Jumeirah Lakes Towers – Dubai, UAE</span>
+          </p>
+        </div>
+        <!-- Location Card 6-->
+        <div class="col-12 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+          <img src="https://i.pinimg.com/736x/7e/bc/b3/7ebcb30d25491a58977a3d566e8c44d0.jpg"
+            class="img-fluid rounded shadow" alt="North Nazimabad"  />
+          <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
+            <i class="bi bi-geo-alt-fill text-danger"></i>
+            <span style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">
+              Clifton – Karachi, Pakistan</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--_______________ FAQ'S _________________________ 
+  <section class="faqs accordion py-5 container-fluid" style="background-color: #4b2e2b">
+    <div class="container py-5 rounded-3" id="accordionFAQ"
+      style="background-color: #e6d3b3; box-shadow: 5px 5px 10px #201e1a" data-aos="fade-up" data-aos-duration="2000"
+      data-aos-delay="100">
+      <h2 class="text-center mb-4" style="color: #4b2e2b; font-family: dancing script; font-size: 2.5em">
+        FAQ's
+      </h2>
+
+      <div class="accordion-item" style="background-color: #e6d3b3; border: 2px solid #4b2e2b">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1"
+            aria-expanded="true" aria-controls="collapseFaq1">
+            Do you offer delivery services?
           </button>
+        </h2>
+        <div id="collapseFaq1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+          data-bs-parent="#accordionFAQ">
+          <div class="accordion-body" style="color: #4b2e2b; font-size: 1.1em">
+            Yes! We offer free delivery within 5km radius. You can order
+            directly from our website or via our mobile app.
+          </div>
         </div>
       </div>
 
-      <!-- Bottom Bar -->
-      <div class="f-bottom">© 2025 Brew Bliss Café. All rights reserved.</div>
-    </footer>
-    <!-- AOS JavaScript -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- Bootstrap JavaScript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="accordion-item" style="border: 2px solid #4b2e2b">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
+            Are your coffee beans organic?
+          </button>
+        </h2>
+        <div id="collapseFaq2" class="accordion-collapse collapse" aria-labelledby="faq2"
+          data-bs-parent="#accordionFAQ">
+          <div class="accordion-body" style="color: #4b2e2b; font-size: 1.1em">
+            Absolutely! We use 100% organic and ethically sourced coffee beans
+            from certified farms.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item" style="border: 2px solid #4b2e2b">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
+            What are your opening hours?
+          </button>
+        </h2>
+        <div id="collapseFaq3" class="accordion-collapse collapse" aria-labelledby="faq3"
+          data-bs-parent="#accordionFAQ">
+          <div class="accordion-body" style="color: #4b2e2b; font-size: 1.1em">
+            We are open daily from 8:00 AM to 11:00 PM, including weekends and
+            holidays.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+ 
+  <!-- _________________USER REVIEWS_______________________ 
+  <section class="reviews-main container-fluid">
+    <h2>What Our Customers Say</h2>
+
+    <div class="container">
+      <div class="row justify-content-center reviews-child">
+        <div class="col-md-6 col-sm-6 col-lg-4 mb-4">
+          <div class="reviews" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+            <h3>Zoya Khan</h3>
+            <p>
+              “Absolutely loved the ambiance and caramel macchiato! Highly
+              recommend.”
+            </p>
+            <h5>Karachi, Pakistan</h5>
+            <span>★★★★★</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-lg-4 mb-4">
+          <div class="reviews" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+            <h3>Ahmed Raza</h3>
+            <p>
+              “Hazelnut latte was smooth and delicious. My new favorite coffee
+              place!”
+            </p>
+            <h5>Lahore, Pakistan</h5>
+            <span>★★★★★</span>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-lg-4 mb-4">
+          <div class="reviews" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+            <h3>Minahil Ali</h3>
+            <p>
+              “The vanilla cold brew was so refreshing! Friendly staff and
+              cozy vibes.”
+            </p>
+            <h5>Islamabad, Pakistan</h5>
+            <span>★★★★★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- __________________FOOTER SECTION ______________________ -->
+  <footer class="footer">
+    <div class="footer-child" data-aos="fade-up" data-aos-duration="2000">
+      <!-- Column 1: -->
+      <div class="f-1">
+        <h2>Get in touch</h2>
+        <p>
+          Your cozy corner for freshly brewed coffee, sweet treats,<br />
+          and relaxing vibes since 2025.
+        </p>
+        <p>
+          <i class="fa-solid fa-location-dot"></i>123 Main Street, Springfield, IL 2704 USA
+        </p>
+        <p><i class="fa-solid fa-phone"></i>+123 (4567) 890</p>
+        <p><i class="fa-solid fa-envelope-open"></i> info@burgerland.com</p>
+      </div>
+
+      <!-- Column 2:-->
+      <div class="f-2">
+        <h3>opening hours</h3>
+        <ul>
+          <li>Tuesday - Friday: 6PM - 11PM</li>
+          <li>Saturday - Sunday: 6PM - 1AM</li>
+          <li>Monday: CLOSED</li>
+        </ul>
+      </div>
+      <!-- Column 3: -->
+      <div class="f-2">
+        <h3>social</h3>
+        <ul><li>Instagram</li>
+        <li>Facebook</li>
+        <li>PINTEREST</li></ul>
+        
+      </div>
+    </div>
+    <hr>
+
+    <!-- Bottom Bar -->
+    <div class="f-bottom"><p>® 2024 All Rights are reserved</p>
+    <p>Made with Love by KaneezFatima & Wania</p></div>
+  </footer>
+  <!-- AOS JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
