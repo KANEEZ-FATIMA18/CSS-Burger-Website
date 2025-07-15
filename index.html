@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <div class="wrapper-box" style=" border-radius: inherit; inset: 0px;">
+  <div class="wrapper-box" style=" border-radius: inherit; inset: 0px;" id="index">
     <nav class="navbar navbar-expand-lg bg-transparent px-lg-5">
       <div class="container-fluid">
         <!-- Logo -->
@@ -29,18 +29,15 @@
             src="https://framerusercontent.com/images/cofcomygsfAPVH6NMpwyAYXhYE.svg" alt=""></a>
 
         <!-- Toggler / Hamburger -->
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" style="color: #faebd7; background-color: #faebd7;border: 3px solid #0D0D0D;">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Offcanvas -->
-        <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar"
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title head-logo" id="offcanvasNavbarLabel">
-              Brew Bliss Café
-            </h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
           </div>
@@ -68,7 +65,7 @@
               </li>
             </ul>
             <div class="mt-3 nav-item text-center">
-              <button class="admin-btn">Book a table</button>
+              <a href="pages/contact.html"><button class="admin-btn">Book a table</button></a>
             </div>
           </div>
         </div>
@@ -78,7 +75,7 @@
     <!-- __________________HERO SECTION ______________________ -->
     <section class="hero-main">
       <div class="hero-1">
-        <h1 class="tracking-in-expand-fwd-bottom scale-down-bottom-alternate ">The Burger lab</h1>
+        <h1 class="">The Burger lab</h1>
         <button class="hero-btn fade-in-up vibrate-1" style="animation-delay: 0.6s">
           Explore Our Burger's
         </button>
@@ -129,9 +126,9 @@
 
 
   <!-- arrow  -->
-  <a href="#menu">
+  <a href="#index">
     <div class="arrow">
-      <i class="fa-solid fa-arrow-down"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </div>
   </a>
 
@@ -145,62 +142,68 @@
 
 
   <!-- _______________OUR SIGNATURE BITES _______________ -->
-    <section class="table-main bites-main">
+  <section class="table-main bites-main">
     <div class="table-content">
       <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">our signature bites</h2>
-      <p>Every burger starts with handpicked, premium- <br>quality meats, perfectly seasoned and grilled to <br> juicy perfection. We don't just settle for the <br> ordinary; our buns are freshly baked, our <br> toppings are always crisp, and every sauce is <br> crafted in-house for that perfect, bold flavor.</p>
+      <p>Every burger starts with handpicked, premium- <br>quality meats, perfectly seasoned and grilled to <br> juicy
+        perfection. We don't just settle for the <br> ordinary; our buns are freshly baked, our <br> toppings are always
+        crisp, and every sauce is <br> crafted in-house for that perfect, bold flavor.</p>
     </div>
     <!-- bites card 1 -->
-     <div class="bites-card tilt-in-top-1" >
+    <div class="bites-card tilt-in-top-1">
       <div class="bites-left">
         <span class="bites-price">12$</span>
         <h3>The Classic street boss</h3>
-        <p>A tribute to the original — juicy beef patty, <br> melted cheddar, crispy lettuce, ripe tomatoes, <br> and a hint of our secret sauce, all stacked on a <br> toasted brioche bun.</p>
+        <p>A tribute to the original — juicy beef patty, <br> melted cheddar, crispy lettuce, ripe tomatoes, <br> and a
+          hint of our secret sauce, all stacked on a <br> toasted brioche bun.</p>
         <button>BOOK NOW</button>
       </div>
       <div class="bites-right">
         <img src="https://framerusercontent.com/images/8yU1Dy4QGqhwpevesSulAngcCMA.png" alt="">
       </div>
-     </div>
+    </div>
 
-      <!-- bites card 2 -->
-     <div class="bites-card bites-light">
+    <!-- bites card 2 -->
+    <div class="bites-card bites-light">
       <div class="bites-left">
         <span class="bites-price">15$</span>
         <h3>The Smoky BBQ Royale</h3>
-        <p>Bold and smoky! Double patties glazed with BBQ sauce, topped with crispy onion rings, melted pepper jack cheese, and a kick of jalapeños, all wrapped in a soft sesame bun.</p>
+        <p>Bold and smoky! Double patties glazed with BBQ sauce, topped with crispy onion rings, melted pepper jack
+          cheese, and a kick of jalapeños, all wrapped in a soft sesame bun.</p>
         <button>BOOK NOW</button>
       </div>
       <div class="bites-right">
         <img src="https://framerusercontent.com/images/OHBqmGoTZBYnM5IeBZT5kPPpl6k.png?scale-down-to=512" alt="">
       </div>
-     </div>
+    </div>
 
-      <!-- bites card 3-->
-     <div class="bites-card">
+    <!-- bites card 3-->
+    <div class="bites-card">
       <div class="bites-left">
         <span class="bites-price">16$</span>
         <h3>The Truffle Shuffle</h3>
-        <p>Indulge in luxury with a truffle aioli, caramelized onions, sautéed mushrooms, Swiss cheese, and arugula, sitting atop a premium Angus beef patty.</p>
+        <p>Indulge in luxury with a truffle aioli, caramelized onions, sautéed mushrooms, Swiss cheese, and arugula,
+          sitting atop a premium Angus beef patty.</p>
         <button>BOOK NOW</button>
       </div>
       <div class="bites-right">
         <img src="https://framerusercontent.com/images/wPIdRCUwBMq8dwU6aAvLvL3mU.png" alt="">
       </div>
-     </div>
+    </div>
 
-      <!-- bites card 4 -->
-     <div class="bites-card bites-light">
+    <!-- bites card 4 -->
+    <div class="bites-card bites-light">
       <div class="bites-left">
         <span class="bites-price">12$</span>
         <h3>The Spicy Heatwav</h3>
-        <p>For the brave! Our fiery burger with a sriracha mayo spread, spicy pepper jack, fresh jalapeños, and a zesty habanero relish to turn up the heat.</p>
+        <p>For the brave! Our fiery burger with a sriracha mayo spread, spicy pepper jack, fresh jalapeños, and a zesty
+          habanero relish to turn up the heat.</p>
         <button>BOOK NOW</button>
       </div>
       <div class="bites-right">
         <img src="https://framerusercontent.com/images/o3sLeGrgv0uPPMlbBApKV2mK4xE.png" alt="">
       </div>
-     </div>
+    </div>
   </section>
 
 
@@ -273,9 +276,10 @@
   </section> -->
 
   <!-- __________________POPULAR MENUSECTION_________________ -->
-  <section id="menu" class="py-5" style="border: 6px solid #faebd7">
-    <div class="container" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-      <h2 class="text-center fw-bold mb-3" style="color: #faebd7; font-family: six caps; font-size: 4.5rem; letter-spacing: 8px;">
+  <section id="menu" class="py-5" style="border: 6px solid #faebd7;overflow-x: hidden;">
+    <div class="container px-4 px-lg-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+      <h2 class="text-center fw-bold mb-3"
+        style="color: #faebd7; font-family: six caps; font-size: 4.5rem; letter-spacing: 8px;">
         Popular Menu
       </h2>
       <p class="text-center mb-6" style="color: #faebd7">
@@ -286,7 +290,7 @@
         <div class="carousel-inner">
           <!-- Slide 1 -->
           <div class="carousel-item active">
-            <div class="row">
+            <div class="row gx-4">
               <!-- Card 1 -->
               <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
                 <div class="card cards">
@@ -301,8 +305,7 @@
                 </div>
               </div>
               <!-- Card 2 -->
-              <div class="col-12 col-md-6 col-lg-4 d-none d-md-block" data-aos="fade-up" data-aos-duration="2000"
-                data-aos-delay="100">
+              <div class="col-12 col-md-6 col-lg-4 " data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
                 <div class="card">
                   <img src="https://i.pinimg.com/736x/52/7b/91/527b91e2dd095c9d29ba7d4ec98a2928.jpg"
                     class="card-img-top menu-img img-fluid" alt="Vanilla Cold Brew" />
@@ -329,7 +332,7 @@
 
           <!-- Slide 2 -->
           <div class="carousel-item">
-            <div class="row">
+            <div class="row gx-4">
               <!-- Card 4 -->
               <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
                 <div class="card">
@@ -357,7 +360,8 @@
               <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block" data-aos="fade-up" data-aos-duration="2000"
                 data-aos-delay="100">
                 <div class="card">
-                  <img src="https://i.pinimg.com/736x/57/1f/ff/571fff618531d22fa694c1e419b309f6.jpg" alt="Pumpkin Spice Latte" />
+                  <img src="https://i.pinimg.com/736x/57/1f/ff/571fff618531d22fa694c1e419b309f6.jpg"
+                    alt="Pumpkin Spice Latte" />
                   <div class="card-body text-center">
                     <h5 class="card-title menu-heading">Grill Master</h5>
                     <button class="menu-button">Order Now</button>
@@ -386,7 +390,7 @@
         style="color: #e6d3b3; font-family: six caps; font-size: 4.5rem; letter-spacing: 7px;">
         Our Locations
       </h2>
-      <div class="row text-center">
+      <div class="row text-center gx-4">
         <!-- Location Card 1 -->
         <div class="col-12 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
           <img src="https://i.pinimg.com/736x/50/7b/b4/507bb4352c6cb87ae99ecc83698c80c2.jpg"
@@ -403,7 +407,7 @@
             class="img-fluid rounded shadow slide-bck-center" alt="DHA Phase 6" />
           <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
             <i class="bi bi-geo-alt-fill text-danger"></i>
-            <span   style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Notting Hill – London, UK</span>
+            <span style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Notting Hill – London, UK</span>
           </p>
         </div>
 
@@ -413,7 +417,8 @@
             class="img-fluid rounded shadow" alt="North Nazimabad" />
           <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
             <i class="bi bi-geo-alt-fill text-danger"></i>
-            <span   style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Shibuya Crossing – Tokyo, Japan</span>
+            <span style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Shibuya Crossing – Tokyo,
+              Japan</span>
           </p>
         </div>
 
@@ -423,7 +428,7 @@
             class="img-fluid rounded shadow" alt="North Nazimabad" />
           <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
             <i class="bi bi-geo-alt-fill text-danger"></i>
-            <span   style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Le Marais – Paris, France</span>
+            <span style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">Le Marais – Paris, France</span>
           </p>
         </div>
 
@@ -440,7 +445,7 @@
         <!-- Location Card 6-->
         <div class="col-12 col-md-4 col-lg-3 mb-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
           <img src="https://i.pinimg.com/736x/7e/bc/b3/7ebcb30d25491a58977a3d566e8c44d0.jpg"
-            class="img-fluid rounded shadow" alt="North Nazimabad"  />
+            class="img-fluid rounded shadow" alt="North Nazimabad" />
           <p class="mt-2 mb-0 text-dark fw-semibold d-flex justify-content-center align-items-center gap-2">
             <i class="bi bi-geo-alt-fill text-danger"></i>
             <span style="color: #0D0D0D; font-family: sans-serif; font-size: 0.9em">
@@ -450,112 +455,6 @@
       </div>
     </div>
   </section>
-
-  <!--_______________ FAQ'S _________________________ 
-  <section class="faqs accordion py-5 container-fluid" style="background-color: #4b2e2b">
-    <div class="container py-5 rounded-3" id="accordionFAQ"
-      style="background-color: #e6d3b3; box-shadow: 5px 5px 10px #201e1a" data-aos="fade-up" data-aos-duration="2000"
-      data-aos-delay="100">
-      <h2 class="text-center mb-4" style="color: #4b2e2b; font-family: dancing script; font-size: 2.5em">
-        FAQ's
-      </h2>
-
-      <div class="accordion-item" style="background-color: #e6d3b3; border: 2px solid #4b2e2b">
-        <h2 class="accordion-header" id="faq1">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1"
-            aria-expanded="true" aria-controls="collapseFaq1">
-            Do you offer delivery services?
-          </button>
-        </h2>
-        <div id="collapseFaq1" class="accordion-collapse collapse show" aria-labelledby="faq1"
-          data-bs-parent="#accordionFAQ">
-          <div class="accordion-body" style="color: #4b2e2b; font-size: 1.1em">
-            Yes! We offer free delivery within 5km radius. You can order
-            directly from our website or via our mobile app.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item" style="border: 2px solid #4b2e2b">
-        <h2 class="accordion-header" id="faq2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
-            Are your coffee beans organic?
-          </button>
-        </h2>
-        <div id="collapseFaq2" class="accordion-collapse collapse" aria-labelledby="faq2"
-          data-bs-parent="#accordionFAQ">
-          <div class="accordion-body" style="color: #4b2e2b; font-size: 1.1em">
-            Absolutely! We use 100% organic and ethically sourced coffee beans
-            from certified farms.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item" style="border: 2px solid #4b2e2b">
-        <h2 class="accordion-header" id="faq3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
-            What are your opening hours?
-          </button>
-        </h2>
-        <div id="collapseFaq3" class="accordion-collapse collapse" aria-labelledby="faq3"
-          data-bs-parent="#accordionFAQ">
-          <div class="accordion-body" style="color: #4b2e2b; font-size: 1.1em">
-            We are open daily from 8:00 AM to 11:00 PM, including weekends and
-            holidays.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
- 
-  <!-- _________________USER REVIEWS_______________________ 
-  <section class="reviews-main container-fluid">
-    <h2>What Our Customers Say</h2>
-
-    <div class="container">
-      <div class="row justify-content-center reviews-child">
-        <div class="col-md-6 col-sm-6 col-lg-4 mb-4">
-          <div class="reviews" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
-            <h3>Zoya Khan</h3>
-            <p>
-              “Absolutely loved the ambiance and caramel macchiato! Highly
-              recommend.”
-            </p>
-            <h5>Karachi, Pakistan</h5>
-            <span>★★★★★</span>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-sm-6 col-lg-4 mb-4">
-          <div class="reviews" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
-            <h3>Ahmed Raza</h3>
-            <p>
-              “Hazelnut latte was smooth and delicious. My new favorite coffee
-              place!”
-            </p>
-            <h5>Lahore, Pakistan</h5>
-            <span>★★★★★</span>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-sm-6 col-lg-4 mb-4">
-          <div class="reviews" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-            <h3>Minahil Ali</h3>
-            <p>
-              “The vanilla cold brew was so refreshing! Friendly staff and
-              cozy vibes.”
-            </p>
-            <h5>Islamabad, Pakistan</h5>
-            <span>★★★★★</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <!-- __________________FOOTER SECTION ______________________ -->
   <footer class="footer">
     <div class="footer-child" data-aos="fade-up" data-aos-duration="2000">
@@ -585,17 +484,21 @@
       <!-- Column 3: -->
       <div class="f-2">
         <h3>social</h3>
-        <ul><li>Instagram</li>
-        <li>Facebook</li>
-        <li>PINTEREST</li></ul>
-        
+        <ul>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>PINTEREST</li>
+        </ul>
+
       </div>
     </div>
     <hr>
 
     <!-- Bottom Bar -->
-    <div class="f-bottom"><p>® 2024 All Rights are reserved</p>
-    <p>Made with Love by KaneezFatima & Wania</p></div>
+    <div class="f-bottom">
+      <p>® 2024 All Rights are reserved</p>
+      <p>Made with Love by KF</p>
+    </div>
   </footer>
   <!-- AOS JavaScript -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

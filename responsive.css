@@ -18,3 +18,60 @@
     font-size: 1em;
   }
 }
+
+/* footer  */
+
+ @media (width<=1200px) {
+  .footer-child {
+    width: 90%;
+  }
+}
+
+@media (width <= 768px) {
+  .footer-child {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 11px;
+    width: 0%;
+    row-gap: 30px;
+  }
+  .f-3 button {
+    margin-bottom: 30px;
+
+  }
+  .f-4{
+    font-size: 13;
+    
+  }
+  .arrow{
+    display: none;
+  }
+  .f-bottom{
+    font-size: 0.5em;
+    flex-direction: column;
+  }
+}
+
+
+/* ========== hero RESPONSIVENESS ========== */
+
+@media(width: 992px) {
+    .hero-1 > h1 {
+        font-size: 100px;
+    }
+}
+
+@media(width <= 768px) {
+    .hero-1 > h1 {
+        font-size: 70px;
+        transform: scaleX(0.8);
+    }
+}
+
+@media(width <= 480px) {
+    .hero-1 > h1 {
+        font-size: 20px;
+        transform: scaleX(0.9);
+    }
+}
