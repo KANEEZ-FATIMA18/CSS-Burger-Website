@@ -1,5 +1,5 @@
 /* Responsive */
-@media (max-width <= 768px) {
+@media (max-width <=768px) {
   .slide {
     flex: 0 0 220px;
   }
@@ -21,13 +21,13 @@
 
 /* footer  */
 
- @media (width<=1200px) {
+@media (width<=1200px) {
   .footer-child {
     width: 90%;
   }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
   .footer-child {
     flex-direction: column;
     align-items: flex-start;
@@ -36,42 +36,160 @@
     width: 0%;
     row-gap: 30px;
   }
+
   .f-3 button {
     margin-bottom: 30px;
 
   }
-  .f-4{
+
+  .f-4 {
     font-size: 13;
-    
+
   }
-  .arrow{
+
+  .arrow {
     display: none;
   }
-  .f-bottom{
+
+  .f-bottom {
     font-size: 0.5em;
     flex-direction: column;
   }
 }
 
+/* born to be tasty & hero */
 
-/* ========== hero RESPONSIVENESS ========== */
 
-@media(width: 992px) {
-    .hero-1 > h1 {
-        font-size: 100px;
-    }
+@media screen and (max-width: 736px) {
+
+  .hero-1>h1,
+  .slider-heading , .bites-content> h2 {
+    font-size: 11rem !important;
+  }
+
+  .hero-btn {
+    font-size: 13px !important;
+    padding: 8px 14px !important;
+  }
 }
 
-@media(width <= 768px) {
-    .hero-1 > h1 {
-        font-size: 70px;
-        transform: scaleX(0.8);
-    }
+
+@media screen and (max-width: 593px) {
+
+  .hero-1>h1,
+  .slider-heading , .bites-content>h2 {
+    font-size: 9rem !important;
+  }
 }
 
-@media(width <= 480px) {
-    .hero-1 > h1 {
-        font-size: 20px;
-        transform: scaleX(0.9);
-    }
+
+
+@media screen and (max-width: 449px) {
+
+  .hero-1>h1,
+  .slider-heading .bites-content>h2 {
+    font-size: 7rem !important;
+  }
 }
+
+
+@media screen and (max-width: 550px) {
+  .wrapper-box {
+    height: 90vh !important;
+  }
+}
+
+
+/* ========== RESPONSIVE BORN TO BE TASTY ========== */
+
+@media screen and (max-width: 600px) {
+  .slider-heading {
+    transform: scaleX(0.8);
+  }
+
+  .slide-bottom p {
+    font-size: 1rem;
+  }
+
+  .slide-bottom button {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+}
+
+
+/* our signature bites  */
+@media screen and (max-width: 1150px) {
+  .bites-left h3{
+    font-size: 5em !important;
+  }
+  .bites-card{
+    flex-direction: column-reverse;
+    row-gap: 40px;
+    padding-top: 30px !important;
+    transform: none !important;
+  }
+  .bites-left{
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    row-gap: 30px;
+  }
+  .bites-price{
+    right: 40%;
+  }
+  
+}
+
+@media screen and (max-width: 1039px){
+  .bites-left h3{
+    font-size: 4em !important;
+  }
+
+}
+
+
+
+@media screen and (max-width: 740px){
+  .bites-right{
+    width: 70% !important;
+  }
+  .bites-card{
+    padding: 0px !important;
+    width: 90% !important;
+  }
+  .bites-left{
+    width: 100%;
+    
+  }
+  .bites-content >h2 , .table-content h2 {
+    font-size: 8em !important;
+  }
+}
+
+@media screen and (max-width: 850px){
+    .bites-content >h2 , .table-content h2 {
+       font-size: 9em !important ;
+    }
+  }
+
+@media screen and (max-width: 665px){
+    .bites-content >h2 , .table-content h2 {
+       font-size: 7em !important ;
+    }
+  }  
+
+
+@media screen and (max-width: 530px){
+    .bites-content >h2 , .table-content h2 {
+       font-size: 5em !important ;
+    }
+     .table-content p{
+      font-size: 1em !important;
+    }
+     .bites-left p{
+      font-size: 1em !important;
+    }
+  } 
+  
+ 
