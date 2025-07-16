@@ -1,0 +1,293 @@
+
+
+@font-face {
+    font-family: six caps;
+    src: url(/sixcaps-fontface/SixCaps-Regular.ttf) format("truetype");
+}
+
+body {
+    background-color: #0d0d0d;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+  color: #faebd7;
+    margin: 30px 0px;
+    font-family: six caps;
+    font-size: 4.5em;
+    letter-spacing: 6px;
+}
+
+.d-green{
+  color: green;
+}
+.d-red{
+  color: red;
+}
+
+.section-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0px 20px;
+   
+}
+
+
+
+.sec-main {
+  background-color: #faebd7;
+    display: flex;
+    width: 450px;
+    align-items: center;
+    padding: 20px 10px;
+    column-gap: 20px;
+    box-shadow: 5px 5px 5px #f0beb535;
+     border-radius: 5px;
+   
+
+}
+
+.sec-img {
+    /* background-color: #725956; */
+    padding: 15px;
+    background-color: #453d3dae;
+}
+
+.sec-img i {
+    /* background-color: rgb(69, 30, 30); */
+    color: #faebd7;
+    padding: 10px;
+    background-color: #0d0d0d;
+    border-radius: 10px;
+}
+
+.sec-content {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #0d0d0d;
+}
+
+
+/* section-1 responsive css */
+@media (width<=959px) {
+    .sec-main {
+        width: 90%;
+    }
+
+}
+
+
+
+/* -_________________section 2_______________ */
+.section-2 {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 20px;
+    width: 100vw;
+    height: auto;
+
+}
+
+.section-2 h2 {
+    font-family: sans-serif;
+    padding: 20px 10px;
+    color: #0d0d0d;
+}
+
+.sec2-main {
+    background-color: #faebd7;
+    width: 350px;
+    color: #0d0d0d;
+    margin: 0 auto;
+  
+      box-shadow: 2px 0px 5px #b88443;
+
+}
+
+.sec2-child {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+    font-family: poppins;
+    margin-bottom: 20px;
+    border-top: 1px solid #0d0d0d;
+    padding-top: 10px;
+    /* border-top: 2px solid white; */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.left h4 {
+    font-size: 16px;
+      font-family: sans-serif;
+
+}
+
+.left img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+
+
+
+/* section 3 */
+
+/* .chart-container {
+      width: 650px;
+      padding: 20px;
+      background-color: #ddc4a8;
+
+    } */
+
+    .chart-container {
+  width: 100%;
+  max-width: 650px;
+  background-color: #faebd7;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .time-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      justify-content: flex-end;
+    }
+
+    .time-buttons button {
+      background-color: #0d0d0d;
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .time-buttons button.active {
+      background-color: #362929;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 400px !important;
+    }
+
+    .legend {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .legend-color {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .orders-color {
+      background-color: #0d0d0d;
+    }
+
+    .sales-color {
+      background-color: #fff;
+    }
+
+
+
+/* section 2 responsive css */
+@media (width<=1280px) {
+    .section-2{
+        row-gap: 30px;
+    }
+    .sec2-main{
+        width: 99%;
+    }
+    
+}
+
+
+
+/* section 3 */
+
+@media (max-width: 768px) {
+  .chart-container {
+    overflow-x: auto;
+    padding: 15px;
+  }
+
+  canvas {
+    min-width: 500px;
+    height: auto !important;
+  }
+}
+
+
+@media (max-width: 500px) {
+  h1, h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .time-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .time-buttons button {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .legend {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
