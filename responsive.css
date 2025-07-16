@@ -2,6 +2,7 @@
 @media (max-width <=768px) {
   .slide {
     flex: 0 0 220px;
+    margin-right: 0px !important;
   }
 
   .slider-heading {
@@ -165,7 +166,7 @@
   }  
 
 
-@media screen and (max-width: 530px){
+@media screen and (max-width: 531px){
     .bites-content >h2 , .table-content h2 {
        font-size: 5em !important ;
     }
@@ -179,15 +180,13 @@
       font-size: 1em !important;
     }
     .story-card{
-      /* margin-left: 20px;
-      margin-right: 20px; */
        height: auto
      
     }
     .pra-story{
       width: 100%;
       height: auto;
-       padding: 0px 10px;
+       padding: 20px 10px;
     }
 
    
@@ -197,11 +196,5 @@
 @media screen and (max-width: 1024px){
   .story-card{
     width: 90vw;
-  }
-}
-  
-@media screen and (max-width: 589px) {
-  .wrapper-about {
-    height: 60vh !important;
   }
 }

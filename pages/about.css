@@ -172,8 +172,7 @@ html {
 .slider-track {
     display: flex;
     width: calc(350px * 10);
-    /* image width x total slides */
-    animation: scroll 25s linear infinite;
+        animation: scroll 25s linear infinite;
     column-gap: 30px;
      background-color: #0D0D0D;
 }
@@ -224,7 +223,6 @@ html {
 
 /*__________________ MEET THE TEAM ___________________ */
 .table-main {
-    height: 90vh;
     background-color: #0D0D0d;
     padding: 50px 0px;
 }
@@ -307,7 +305,6 @@ html {
     font-size: 1.2em;
     width: 100%;
     margin: 0 auto;
-    background-color: beige;
 }
 
 /* ______________________FOOTER ____________________________ */
