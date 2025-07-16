@@ -355,11 +355,10 @@ html {
     object-fit: cover;
 }
 
-.slide:hover {
+/* .slide:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
-    cursor: vertical-text;
-}
+} */
 
 
 @keyframes scroll {
@@ -448,10 +447,9 @@ html {
     background-color: #FAEBD7;
     transition: all 2s ease-in-out;
 } */
-
-/* -__________________POPULAR MENU ____________________ */
-*#menu {
-    background-color: #9d4a4a;
+/* -__POPULAR MENU ____________________ */
+#menu {
+    background-color: #0D0D0D;
 }
 
 .menu-heading {
@@ -471,26 +469,22 @@ html {
 
 .card {
     background-color: #FAEBD7;
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 5px;
+    padding: 10px;
     height: auto;
-    max-width: 390px;
-    
-    
     box-sizing: border-box;
     box-shadow: 10 10px 15px rgba(199, 186, 186, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
-    margin-bottom: 30px;
+   margin-bottom: 30px;
     column-gap: 10px;
     display: flex;
-    justify-content: center;
 }
 
-.card:hover {
+/* .card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
-}
+} */
 
 .row {
     width: 100%;
@@ -514,7 +508,6 @@ html {
     transition: 0.5s;
     cursor: pointer;
 }
-
 /* _______________OUR SIGNATURE BITES ______________ */
 .bites-main {
     background-color: #FAEBD7;
@@ -631,6 +624,11 @@ html {
     color: #FAEBD7;
 }
 
+.bites-light button:hover {
+    color: #FAEBD7;
+    background-color: #0D0D0D;
+    border: none;
+}
 .bites-light button {
     color: #0D0D0D;
     border: 2px solid #0D0D0D;
@@ -660,10 +658,10 @@ html {
     font-size: 16px;
     column-gap: 20px;
     padding: 20px 20px;
-    /* box-shadow: 10px 10px 10px black; */
     flex-direction: row;
     margin-top: 30px;
     align-content: left;
+    row-gap: 30px;
 }
 
 .f-1 h2 {
@@ -684,7 +682,7 @@ html {
     font-size: 1em;
     font-family: sans-serif;
     color: #FAEBD7;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .footer-child ul{
@@ -716,14 +714,12 @@ html {
 .f-bottom {
     font-size: 1em;
     color: #FAEBD7;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-top: 3px solid #FAEBD7;
+    padding-top: 20px ;
 
 }
 
-hr {
-    width: 100%;
-    color: #FAEBD7;
-}

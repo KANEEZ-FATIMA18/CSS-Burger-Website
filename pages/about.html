@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABOUT US</title>
   <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="../responsive.css">
   <!-- Bootstrap  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
@@ -15,54 +16,51 @@
 </head>
 
 <body>
-  <div class="wrapper-box" style=" border-radius: inherit; inset: 0px;">
-    <nav class="navbar navbar-expand-lg bg-transparent px-lg-5">
+  <div class="wrapper-box wrapper-about" style=" border-radius: inherit; inset: 0px;">
+     <nav class="navbar navbar-expand-lg bg-transparent px-lg-5">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand head-logo text-white" href="index.html"><img
+        <a class="navbar-brand head-logo text-white" href="../index.html"><img
             src="https://framerusercontent.com/images/cofcomygsfAPVH6NMpwyAYXhYE.svg" alt=""></a>
 
         <!-- Toggler / Hamburger -->
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" style="color: #faebd7; background-color: #faebd7;border: 3px solid #0D0D0D;">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Offcanvas -->
-        <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar"
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title head-logo" id="offcanvasNavbarLabel">
-              Brew Bliss Café
-            </h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center align-items-center gap-4 flex-grow-1 pe-3 head-links">
+            <ul class="navbar-nav justify-content-end align-items-center gap-4 flex-grow-1 pe-3 head-links">
               <li class="nav-item">
-                <a class="nav-link text-white" href="/pages/about.html">About Us</a>
+                <a class="nav-link" href="/pages/about.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="/pages/cafe.html">Cafe Menu</a>
+                <a class="nav-link " href="../index.html#chefs-slection">Cafes Selection</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="/pages/image.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#location">Locations</a>
+                <a class="nav-link " href="/pages/cafe.html">Our Menu</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link text-white" href="/pages/signup.html">Signup</a>
+                <a class="nav-link" href="/pages/signup.html">Signup</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link text-white" href="/pages/login.html">Login</a>
+                <a class="nav-link" href="/pages/login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/pages/login.html">Admin</a>
               </li>
             </ul>
             <div class="mt-3 nav-item text-center">
-              <button class="admin-btn">Admin Dashboard</button>
+              <a href="/pages/contact.html"><button class="admin-btn">Book a table</button></a>
             </div>
           </div>
         </div>
@@ -81,43 +79,32 @@
   <section class="table-main story-main">
     <div class="table-content">
       <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">our story</h2>
-      <p>It all began with a passion for flavor and a dream to create more than just <br> food—an experience. From our
-        humble beginnings as a food truck serving <br> burgers with heart, to becoming a local hotspot with a speakeasy
-        twist, our <br> journey has been all about bringing people together over great food and <br>unforgettable
-        moments. Every step we’ve taken is fueled by a love for craft, <br> creativity, and community.</p>
+      <p>It all began with a passion for flavor and a dream to create more than just food—an experience. From our humble beginnings as a food truck serving burgers with heart, to becoming a local hotspot with a speakeasy twist, our journey has been all about bringing people together over great food and unforgettable moments. Every step we’ve taken is fueled by a love for craft, creativity, and community.</p>
     </div>
     <div class="story-card">
       <p>1994</p>
       <h3>The Journey Begins</h3>
       <img src="https://framerusercontent.com/images/qoAo5TLpEIf00QAOtNmAL0hlOU.webp?scale-down-to=2048" alt="">
-      <p class="pra-story">Our story started on four wheels and a dream. With a food truck and a <br> passion for
-        crafting unforgettable burgers, we brought bold flavors to the <br> streets, creating a loyal following that
-        craved every bite.</p>
+      <p class="pra-story">Our story started on four wheels and a dream. With a food truck and a passion for crafting unforgettable burgers, we brought bold flavors to the streets, creating a loyal following that craved every bite.</p>
     </div>
     <div class="story-card">
       <p>1994</p>
       <h3>The first restaurant</h3>
       <img src="https://framerusercontent.com/images/RBdTdRvxWPR7KM5SJ2eBUKHsQTI.webp?scale-down-to=2048" alt="">
-      <p class="pra-story">Our story started on four wheels and a dream. With a food truck and a <br> passion for
-        crafting unforgettable burgers, we brought bold flavors to the <br> streets, creating a loyal following that
-        craved every bite.</p>
+      <p class="pra-story">Seven years later, we traded our wheels for a cozy space where people could come together to enjoy our signature creations. Opening our first restaurant was the beginning of a new chapter.</p>
     </div>
     <div class="story-card">
       <p>1994</p>
       <h3>The speakeasy</h3>
       <img src="https://framerusercontent.com/images/leb0uBhDqGObpHMwk7GNs3FzdB4.webp?scale-down-to=2048" alt="">
-      <p class="pra-story">Our story started on four wheels and a dream. With a food truck and a <br> passion for
-        crafting unforgettable burgers, we brought bold flavors to the <br> streets, creating a loyal following that
-        craved every bite.</p>
+      <p class="pra-story">We took things up a notch by opening a hidden gem—a speakeasy that blended mystery, craft cocktails, and our signature style. This secret spot became the perfect place to unwind, connect, and enjoy.</p>
     </div>
 
     <div class="story-card">
       <p>1994</p>
       <h3>Cheers to the Top 50</h3>
       <img src="https://framerusercontent.com/images/0ys8xTvZyAeJMJ9xr3r9OwOXBw.webp" alt="">
-      <p class="pra-story">Our story started on four wheels and a dream. With a food truck and a <br> passion for
-        crafting unforgettable burgers, we brought bold flavors to the <br> streets, creating a loyal following that
-        craved every bite.</p>
+      <p class="pra-story">After years of dedication, we reached an incredible milestone: being recognized as one of the Top 50 Cocktail Bars. This honor reflects our commitment to creativity and quality.</p>
     </div>
 
 
@@ -209,8 +196,7 @@
 
 
 
-
-  <!-- __________________FOOTER SECTION ______________________ -->
+<!-- __________________FOOTER SECTION ______________________ -->
   <footer class="footer">
     <div class="footer-child" data-aos="fade-up" data-aos-duration="2000">
       <!-- Column 1: -->
@@ -252,7 +238,7 @@
     <!-- Bottom Bar -->
     <div class="f-bottom">
       <p>® 2024 All Rights are reserved</p>
-      <p>Made with Love by KaneezFatima & Wania</p>
+      <p>Made with Love by KF</p>
     </div>
   </footer>
   <!-- AOS JavaScript -->

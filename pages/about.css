@@ -13,8 +13,10 @@ html {
     scroll-behavior: smooth;
 }
 
-.wrapper-box {
-    background-image: url(	https://framerusercontent.com/images/RBdTdRvxWPR7KM5SJ2eBUKHsQTI.webp?scale-down-to=2048);
+
+.wrapper-about{
+    height: 80vh;
+      background-image: url(	https://framerusercontent.com/images/RBdTdRvxWPR7KM5SJ2eBUKHsQTI.webp?scale-down-to=2048);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -22,15 +24,10 @@ html {
     background-color: rgba(3, 3, 3, 0.5);
     background-attachment: fixed;
     width: 100%;
-    height: 80vh;
 }
 
 /*  -___________________HEADER __________________ */
-/* .head-logo {
-  font-size: 2.5rem;
-  font-family: "Dancing Script", cursive;
-   white-space: nowrap;
-} */
+
 
 .navbar .head-logo {
     font-size: 1.2rem;
@@ -43,30 +40,35 @@ html {
 
 .head-links .nav-link {
     font-size: 1.1em;
-    font-family: "Poppins", sans-serif;
+    font-family: sans-serif;
     transition: color 0.5s;
+    color: #FAEBD7;
+    font-weight: bold;
 }
 
 .head-links .nav-link:hover {
-    color: #c49e72 !important;
+    color: #FAEBD7 !important;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .admin-btn {
-    background-color: #c49e72;
-    color: #4b2e2b;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    color: #FAEBD7;
+    font-size: 17px;
+    font-family: sans-serif;
     padding: 10px 16px;
-    border: none;
-    border-radius: 20px;
+    border: 2px solid #FAEBD7;
+    border-radius: 30px;
+    text-transform: uppercase;
 }
 
 .admin-btn:hover {
-    background-color: #4b2e2b;
-    color: #c49e72;
+    background-color: #FAEBD7;
+    color: #0D0D0D;
     transition: 0.5s;
     cursor: pointer;
-    box-shadow: 4px 4px 5px #c49e72;
 }
 
 .navbar-brand img {
@@ -231,16 +233,16 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 100%;
     text-align: center;
     margin: 0px auto;
     font-size: 16px;
-
+    padding-top: 30px;
 }
 
 .table-content h2 {
     text-align: center;
-    font-size: 230px;
+    font-size: 180px;
     font-family: 'six caps', sans-serif;
     color: #FAEBD7;
     text-transform: uppercase;
@@ -255,25 +257,9 @@ html {
     color: #FAEBD7;
     line-height: 30px;
     font-size: 1.2em;
-}
-
-.table-content button {
-    border: 1px solid #FAEBD7;
-    text-transform: uppercase;
-    border-radius: 20px;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    background-color: transparent;
-    font-size: 15px;
-    font-weight: semi-bold;
-    color: #FAEBD7;
-
-}
-
-.table-content button:hover {
-    color: #0D0D0D;
-    background-color: #FAEBD7;
-    transition: all 2s ease-in-out;
+    max-width: 650px;
+    margin: 0px auto;
+    padding: 0px 20px;
 }
 
 /* ________________our story _____________ */
@@ -288,15 +274,18 @@ html {
 }
 .story-main p{
     color: #0D0D0D;
+    
 }
 
 .story-card{
     width: 70vw;
     background-color: #FAEBD7;
     border: 1px solid #0D0D0D;
-    margin: 20px auto;
+    margin: 60px auto;
     height: 520px;
     text-align: center;
+    margin-bottom: 30px !important;
+
 }
 
 .story-card img{
@@ -314,8 +303,11 @@ html {
 
 .pra-story{
     text-align: center;
-    padding: 30px 0px;
-    font-size: 1.1em;
+    padding: 20px 50px;
+    font-size: 1.2em;
+    width: 100%;
+    margin: 0 auto;
+    background-color: beige;
 }
 
 /* ______________________FOOTER ____________________________ */
@@ -341,10 +333,10 @@ html {
     font-size: 16px;
     column-gap: 20px;
     padding: 20px 20px;
-    /* box-shadow: 10px 10px 10px black; */
     flex-direction: row;
     margin-top: 30px;
     align-content: left;
+    row-gap: 30px;
 }
 
 .f-1 h2 {
@@ -365,7 +357,11 @@ html {
     font-size: 1em;
     font-family: sans-serif;
     color: #FAEBD7;
-    padding-top: 20px;
+    padding-top: 15px;
+}
+
+.footer-child ul{
+    padding-left: 0px;
 }
 
 .f-1 {
@@ -391,10 +387,11 @@ html {
 
 
 .f-bottom {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #FAEBD7;
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 
 }
