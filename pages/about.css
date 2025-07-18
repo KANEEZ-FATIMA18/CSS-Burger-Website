@@ -306,7 +306,6 @@ html {
     width: 100%;
     margin: 0 auto;
 }
-
 /* ______________________FOOTER ____________________________ */
 .footer {
     background-color: #0D0D0D;
@@ -339,21 +338,21 @@ html {
 .f-1 h2 {
     font-size: 4.2em;
     font-family: six caps;
-    color: #FAEBD7;
+    color: #FBEBD8;
     letter-spacing: 6px;
 }
 
 .footer-child h3 {
     font-size: 2.7em;
     font-family: six caps;
-    color: #FAEBD7;
+    color: #FBEBD8;
     letter-spacing: 6px;
 }
 
 .footer-child p {
     font-size: 1em;
     font-family: sans-serif;
-    color: #FAEBD7;
+    color: #FBEBD8;
     padding-top: 15px;
 }
 
@@ -375,7 +374,7 @@ html {
     font-family: sans-serif;
     padding-top: 20px;
     text-decoration: none;
-    color: #FAEBD7;
+    color: #FBEBD8;
 }
 
 .f-3 {
@@ -385,15 +384,12 @@ html {
 
 .f-bottom {
     font-size: 1em;
-    color: #FAEBD7;
-    width: 100%;
+    color: #FBEBD8;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-top: 3px solid #FBEBD8;
+    padding-top: 20px ;
 
-}
-
-hr {
-    width: 100%;
-    color: #FAEBD7;
 }

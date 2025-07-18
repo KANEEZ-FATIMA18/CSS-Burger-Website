@@ -198,3 +198,47 @@
     width: 90vw;
   }
 }
+
+
+/* __________________RESPONSIVE MENU SECTION ________________ */
+@media (max-width: 1198px) {
+    .menu-center{
+        display: none;
+    }
+    .menu-left h2{
+        font-size: 78px;
+        width: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .menu-child{
+        flex-direction: column;
+        text-align: center;
+        row-gap: 20px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .menu-left{
+        width: 50%;
+    }
+    .menu-right{
+        width: 40%;
+    }
+    .menu-left h2{
+        font-size: 50px;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-child{
+        padding: 20px;
+    }
+    .menu-left{
+        width: auto;
+    }
+    .menu-right{
+        width:auto;
+    }
+}

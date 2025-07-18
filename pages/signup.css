@@ -71,7 +71,8 @@
   font-size: 3.8em;
   font-family: six caps;
   margin-bottom: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  font-weight: 200;
 }
 
 .sign-2-child p {

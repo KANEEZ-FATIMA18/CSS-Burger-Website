@@ -51,7 +51,7 @@ h1 {
     display: flex;
     width: 450px;
     align-items: center;
-    padding: 20px 10px;
+    padding: 10px 10px;
     column-gap: 20px;
     box-shadow: 5px 5px 5px #f0beb535;
      border-radius: 5px;
@@ -99,13 +99,14 @@ h1 {
     column-gap: 20px;
     width: 100vw;
     height: auto;
+    justify-content: center;
 
 }
 
-.section-2 h2 {
+.section-main h2 {
     font-family: sans-serif;
-    padding: 20px 10px;
-    color: #0d0d0d;
+    padding: 20px 10px ;
+    color: #0d0d0d ;
 }
 
 .sec2-main {
@@ -148,78 +149,35 @@ h1 {
     width: 50px;
     border-radius: 10px;
 }
-.chart-container {
-  width: 100%;
-  max-width: 650px;
-  background-color: #faebd7;
-  padding: 20px;
-  margin: 0 auto;
-  box-sizing: border-box;
+
+
+h1 {
+    text-align: left !important;
+    color: #0d0d0d !important;
+    font-size: 4.5em !important;
+   
 }
 
+.h2 {
+    color: #0d0d0d !important;
+    font-size: 1.4em !important;
+    text-align: left !important;
+    padding-left: 10px;
+}
 
-    h2 {
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    .time-buttons {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-      justify-content: flex-end;
-    }
-
-    .time-buttons button {
-      background-color: #0d0d0d;
-      color: #fff;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    .time-buttons button.active {
-      background-color: #362929;
-    }
-
-    canvas {
-      width: 100% !important;
-      height: 400px !important;
-    }
-
-    .legend {
-      margin-top: 20px;
-      display: flex;
-      gap: 20px;
-      justify-content: flex-start;
-      align-items: center;
-      font-size: 14px;
-    }
-
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .legend-color {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      display: inline-block;
-    }
-
-    .orders-color {
-      background-color: #0d0d0d;
-    }
-
-    .sales-color {
-      background-color: #fff;
-    }
-
-
+.h3 {
+    text-align: left !important;
+    color: #0d0d0d !important;
+    font-size: 1.2em !important;
+    font-weight: bold;
+    padding-left: 10px;
+}
+h4 {
+    text-align: left !important;
+    color: #0d0d0d !important;
+    font-size: 1em !important;
+    font-weight: bold;
+}
 
 /* section 2 responsive css */
 @media (width<=1280px) {
@@ -232,21 +190,12 @@ h1 {
     
 }
 
-
-
-/* section 3 */
-
-@media (max-width: 768px) {
-  .chart-container {
-    overflow-x: auto;
-    padding: 15px;
-  }
-
-  canvas {
-    min-width: 500px;
-    height: auto !important;
+@media screen and (max-width: 768px){
+  .sec-3{
+    width: 1000px;
   }
 }
+ 
 
 
 @media (max-width: 500px) {
@@ -254,22 +203,7 @@ h1 {
     font-size: 18px;
     text-align: center;
   }
-
-  .time-buttons {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .time-buttons button {
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-
-  .legend {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 12px;
-  }
+  
 }
 
  .fade-slide-left {
@@ -316,8 +250,4 @@ h1 {
         transform: translateX(0);
       }
     }
-
-
-
-
 
