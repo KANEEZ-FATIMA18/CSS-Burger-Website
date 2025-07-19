@@ -20,6 +20,7 @@
   }
 }
 
+
 /* footer  */
 
 @media (width<=1200px) {
@@ -241,4 +242,33 @@
     .menu-right{
         width:auto;
     }
+}
+/* meet the team  */
+
+@media (max-width: 768px) {
+  .team-slide {
+    flex: 0 0 260px !important;
+  }
+
+  .team-slide img {
+    height: 350px !important;
+  }
+
+  .team-slide h4 {
+    font-size: 2em !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-slide {
+    flex: 0 0 220px !important;
+  }
+
+  .team-slide img {
+    height: 300px !important;
+  }
+
+  .team-slide h4 {
+    font-size: 1.5em !important;
+  }
 }
